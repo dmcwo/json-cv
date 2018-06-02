@@ -1,0 +1,68 @@
+---
+layout: default
+---
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+<!-- Name -->
+<h2>{{ site.data.cv.basics.name }}</h2>
+
+<!-- Website and social media profiles -->
+{% if site.data.cv.basics.website %}
+    <p class="">
+        <a href="{{ site.data.cv.basics.website }}"> <i class="large home icon "></i>{{ site.data.cv.basics.website | remove: "http://" | remove: "https://" }}</a>
+    </p>
+{% endif %}
+
+{% if site.data.cv.basics.email %}
+    <p class="">
+        <a href="mailto:{{ site.data.cv.basics.email }}"> <i class="large mail outline icon "></i>{{ site.data.cv.basics.email }}</a>
+    </p>
+{% endif %}
+
+{% for entry in site.data.cv.basics.profiles %}
+    <p class="ui no-bottom">
+        <a href="{{ entry.url }}"> <i class="fab fa-{{ entry.network | downcase }} icon "></i>: {{ entry.username }}</a>
+    </p>
+{% endfor %}
+
+
+<!-- Address -->
+
+<p class="">{{ site.data.cv.basics.location.address }}</p>
+<p class="">{{ site.data.cv.basics.location.city }}, {{ site.data.cv.basics.location.region }} {{ site.data.cv.basics.location.postalCode }} {{ site.data.cv.basics.location.countryCode }}</p>
+<p class="">{{ site.data.cv.basics.phone }}</p>
+
+<!-- Education -->
+
+<div class="sixteen wide column no-bottom">
+  <h3 class="ui left aligned header no-bottom">Education</h3>
+</div>
+
+{% for entry in site.data.cv.education %}
+  <div class="twelve wide column no-bottom">
+    <p class="ui no-bottom"><b>{{ entry.institution }}</b></p>
+    <p class="ui no-bottom">{{ entry.studyType }}, {{ entry.area }}.
+      {% if entry.startDate %}
+        {{ entry.startDate | slice: 0,4 }}
+      {% endif %}
+      {% if entry.startDate and entry.startDate != '' and entry.endDate and entry.endDate != '' %}
+        -
+      {% endif %}
+      {% if entry.endDate %}
+        {% if entry.endDate != "Present" %}
+          {{ entry.endDate | slice: 0,4 }}.
+        {% else %}
+          {{ entry.endDate }}.
+        {% endif %}
+      {% endif %}
+      </p>
+    {% if entry.courses %}
+      <ul style="margin: 0px;">
+        {% for course in entry.courses %}
+          <li>{{ course }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+{% endfor %}
+<hr>
+{{ content }}

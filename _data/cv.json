@@ -1,124 +1,163 @@
 {
-    
-  "basics": {
-    "name": "FirstName LastName",
-    "label": "PrimaryOrCurrentTitle",
-    "picture": "FullProfileURL.jpg",
-    "email": "email@the-university-url.edu",
-    "phone": "(555) 555-4321",
-    "website": "http://url.edu",
-    "summary": "A short professional summary",
-    "location": {
-      "address": "555 A St",
-      "postalCode": "CA 94115",
-      "city": "City",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [{
-        "network": "Twitter",
-        "username": "username",
-        "url": "http://twitter.com/username"
-        },
-        {
-        "network": "github",
-        "username": "username",
-        "url": "http://github.com/username"
-        },
-        {
-        "network": "linkedin",
-        "username": "username",
-        "url": "https://www.linkedin.com/in/username/"
-        }
-    ]
-  },
-  "work": [{
-    "company": "CurrentInstitution",
-    "position": "Position",
-    "website": "http://the-university-url.edu",
-    "startDate": "2013-01-01",
-    "endDate": "2014-01-01",
-    "summary": "Short description of primary role (optional)...",
-    "highlights": [
-        "First hightlight",
-        "Second hightlight",
-        "Third hightlight",
-    ]
-  },
-    {
-        "company": "PreviousInstitution",
-    "position": "Position",
-    "website": "http://the-previous-university-url.edu",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Short description of primary role (optional)...",
-    "highlights": [
-        "First hightlight",
-        "Second hightlight",
-        "Third hightlight",
-    ]
-    }
-          ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "website": "http://the-organization-orl.org/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description...",
-    "highlights": [
-        "First hightlight",
-        "Second hightlight",
-        "Third hightlight",
-    ]
-  }],
-  "education": [{
-    "institution": "University",
-    "area": "Major / Department",
-    "studyType": "DegreesAwarded",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "gpa": "4.0",
-    "courses": [
-      "CourseNumber - CourseName"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "AwarderName",
-    "summary": "SummaryOfAward."
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "website": "http://publication.com",
-    "summary": "Description..."
-  }],
-  "skills": [{
-    "name": "Web Development",
-    "level": "Master",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "Javascript"
-    ]
-  }],
-  "languages": [{
-    "name": "English",
-    "level": "Native speaker"
-  }],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "ReferenceName",
-    "reference": "QuoteFromReference"
-  }]
-
+	"basics": {
+		"name": "YourFirstName YourLastName",
+		"label": "YourPrimaryOrCurrentTitle",
+		"picture": "FullProfileURL.jpg",
+		"email": "email@your-institution.edu",
+		"phone": "(333) 333-3333",
+		"website": "http://your-personal-website.edu",
+		"summary": "A short professional summary",
+		"location": {
+			"address": "333 B Street",
+			"postalCode": "CA 94115",
+			"city": "City",
+			"countryCode": "US",
+			"region": "California"
+		},
+		"profiles": [
+			{
+				"network": "Twitter",
+				"username": "username",
+				"url": "http://twitter.com/your-username"
+			},
+			{
+				"network": "github",
+				"username": "username",
+				"url": "http://github.com/your-username"
+			},
+			{
+				"network": "linkedin",
+				"username": "username",
+				"url": "https://www.linkedin.com/in/your-username/"
+			}
+		]
+	},
+	"work": [
+		{
+			"company": "CurrentInstitution",
+			"position": [
+				{
+					"title": "YourTitle",
+					"startDate": "2017-01-01",
+					"endDate": "Present"
+				},
+				{
+					"title": "YourPreviousTitle",
+					"startDate": "2016-01-01",
+					"endDate": "2016-12-31"
+				}
+			],
+			"website": "http://the-university-url.edu",
+			"startDate": "2016-12-31",
+			"endDate": "Present",
+			"summary": "A short description of your primary role.",
+			"highlights": [
+				"First hightlight",
+				"Second hightlight",
+				"Third hightlight"
+			]
+		},
+		{
+			"company": "PreviousInstitution",
+			"position": [
+				{
+					"title": "YourTitle",
+					"startDate": "2015-01-01",
+					"endDate": "Present"
+				},
+				{
+					"title": "YourPreviousTitle",
+					"startDate": "2013-01-01",
+					"endDate": "2014-12-31"
+				}
+			],
+			"website": "http://the-previous-university-url.edu",
+			"startDate": "2013-01-01",
+			"endDate": "2015-01-01",
+			"summary": "Short description of primary role (optional)...",
+			"highlights": [
+				"First hightlight",
+				"Second hightlight",
+				"Third hightlight"
+			]
+		}
+	],
+	"volunteer": [
+		{
+			"organization": "Organization",
+			"position": "Volunteer",
+			"website": "http://the-organization-orl.org/",
+			"startDate": "2012-01-01",
+			"endDate": "2013-01-01",
+			"summary": "Description...",
+			"highlights": [
+				"First hightlight",
+				"Second hightlight",
+				"Third hightlight"
+			]
+		}
+	],
+	"education": [
+		{
+			"institution": "University",
+			"area": "Major / Department",
+			"studyType": "DegreesAwarded",
+			"startDate": "2011-01-01",
+			"endDate": "2013-01-01",
+			"gpa": "4.0",
+			"courses": [
+				"CourseNumber - CourseName",
+				"CourseNumber2 - CourseName2"
+			]
+		}
+	],
+	"awards": [
+		{
+			"title": "Award",
+			"date": "2014-11-01",
+			"awarder": "AwarderName",
+			"summary": "SummaryOfAward."
+		}
+	],
+	"publications": [
+		{
+			"name": "PublicationTitle",
+			"publisher": "PublisherName",
+			"releaseDate": "2014-10-01",
+			"website": "http://your-publication-doi.org",
+			"summary": "Description..."
+		}
+	],
+	"skills": [
+		{
+			"name": "SkillName",
+			"level": "SkillLevel",
+			"keywords": [
+				"Related-SubSkill-1",
+				"Related-SubSkill-2",
+				"Related-SubSkill-3"
+			]
+		}
+	],
+	"languages": [
+		{
+			"name": "LangaugeName",
+			"level": "LanguageProficiencyLevel"
+		}
+	],
+	"interests": [
+		{
+			"name": "InterestName",
+			"keywords": [
+				"RelatedInterest1",
+				"RelatedInterest2"
+			]
+		}
+	],
+	"references": [
+		{
+			"name": "ReferenceName",
+			"reference": "QuoteFromReference"
+		}
+	]
 }

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>From json resume to json cv | json cv</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="From json resume to json cv" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Looking at ways to extend json resume to cover more of the common elements in an academic cv." />
+<meta property="og:description" content="Looking at ways to extend json resume to cover more of the common elements in an academic cv." />
+<link rel="canonical" href="http://localhost:4000/json-cv/json/resume/cv/2018/06/01/welcome-to-jekyll.html" />
+<meta property="og:url" content="http://localhost:4000/json-cv/json/resume/cv/2018/06/01/welcome-to-jekyll.html" />
+<meta property="og:site_name" content="json cv" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-06-01T20:55:50-07:00" />
+<script type="application/ld+json">
+{"description":"Looking at ways to extend json resume to cover more of the common elements in an academic cv.","@type":"BlogPosting","url":"http://localhost:4000/json-cv/json/resume/cv/2018/06/01/welcome-to-jekyll.html","headline":"From json resume to json cv","dateModified":"2018-06-01T20:55:50-07:00","datePublished":"2018-06-01T20:55:50-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/json-cv/json/resume/cv/2018/06/01/welcome-to-jekyll.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/json-cv/assets/css/style.css?v=acbc51c75de6e3524080c122ca06b0650c6c9390">
+    <script src="/json-cv/assets/js/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">json cv</h1>
+        <p class="header">json resume is super cool. but it is missing quite a few things that are needed for an academic cv. json cv provides some notes and a starting point for extending json resume with additional entries for academic contexts. </p>
+
+        <ul>
+          
+          <li><a class="buttons github" href="http://github.com/dmcwo/json-cv">View On GitHub</a></li>
+        </ul>
+
+        
+          <p class="header">This project is maintained by <a class="header name" href="http://github.com/dmcwo">dmcwo</a></p>
+        
+
+        
+      </header>
+
+      <section>
+        <p>Looking at ways to extend json resume to cover more of the common elements in an academic cv.</p>
+
+<h3 id="multiple-positions-at-the-same-institution">multiple positions at the same institution</h3>
+
+<h4 id="json-resume">json resume</h4>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">"work"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+		</span><span class="p">{</span><span class="w">
+			</span><span class="s2">"company"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CurrentInstitution"</span><span class="p">,</span><span class="w">
+			</span><span class="s2">"position"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+				</span><span class="p">{</span><span class="w">
+					</span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"YourTitle"</span><span class="p">,</span><span class="w">
+					</span><span class="s2">"startDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-01"</span><span class="p">,</span><span class="w">
+					</span><span class="s2">"endDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Present"</span><span class="w">
+				</span><span class="p">},</span><span class="w">
+				</span><span class="p">{</span><span class="w">
+					</span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"YourPreviousTitle"</span><span class="p">,</span><span class="w">
+					</span><span class="s2">"startDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-01-01"</span><span class="p">,</span><span class="w">
+					</span><span class="s2">"endDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-12-31"</span><span class="w">
+				</span><span class="p">}</span><span class="w">
+			</span><span class="p">],</span><span class="w">
+			</span><span class="s2">"website"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://the-university-url.edu"</span><span class="p">,</span><span class="w">
+			</span><span class="s2">"startDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-12-31"</span><span class="p">,</span><span class="w">
+			</span><span class="s2">"endDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Present"</span><span class="p">,</span><span class="w">
+			</span><span class="s2">"summary"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A short description of your primary role."</span><span class="p">,</span><span class="w">
+			</span><span class="s2">"highlights"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+				</span><span class="s2">"First hightlight"</span><span class="p">,</span><span class="w">
+				</span><span class="s2">"Second hightlight"</span><span class="p">,</span><span class="w">
+				</span><span class="s2">"Third hightlight"</span><span class="w">
+			</span><span class="p">]</span><span class="w">
+		</span><span class="p">},</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+
+      </section>
+
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
